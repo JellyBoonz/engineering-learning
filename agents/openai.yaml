@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Learning"
+  short_description: "Ship software while building durable expertise"
+  default_prompt: "Use $engineering-learning to help me complete this repository task while deliberately developing the target competencies."
