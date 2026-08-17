@@ -190,6 +190,18 @@ A transfer check changes one meaningful dimension while preserving the governing
 
 Do not count verbatim repetition as transfer. If the user struggles, return to Apply for that subcompetency and offer a targeted hint.
 
+## Run review comprehension checks
+
+When the agent authored substantial target-related code, or when the user requests an understanding check, run a compact comprehension check before the user sends or approves the change. Keep work-sample evidence as the default; use this check as a review-time speed regulator when implementation has outpaced understanding.
+
+- Ask three to five questions grounded in the actual change, covering its purpose or invariant, causal mechanism, one consequential decision or tradeoff, a realistic failure mode, and a near-transfer scenario.
+- Test target knowledge only. Never quiz incidental details, syntax trivia, filenames, or facts the user could simply look up.
+- Assess the reasoning rather than exact wording. After an attempt, use the normal hint ladder and record the assistance required.
+- When an answer reveals a misconception, point to the relevant code, explain the minimum missing model, and recheck with a changed scenario rather than repeating the same question.
+- Treat the result as competency evidence, not a separate score. Do not promote from recognition or answers supplied by the agent.
+- Make approval or submission contingent on the check only when the user opted into that gate. Never delay urgent mitigation or withhold a safety-critical finding; use the delivery escape hatch and schedule a recovery check instead.
+- Skip or shorten the check for trivial changes, incidental work, or competencies already supported by strong recent transfer evidence unless the user wants retention practice.
+
 ## Manage mode transitions explicitly
 
 Announce transitions in one sentence when they change who owns the next cognitive step:
